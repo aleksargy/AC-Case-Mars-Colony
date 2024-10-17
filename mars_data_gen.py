@@ -2,8 +2,6 @@ import pandas as pd
 import numpy as np
 from datetime import timedelta, datetime
 
-# Regenerate datasets with drastic changes to Mars weather on galactic event days
-
 np.random.seed(42)
 
 # Galactic events
@@ -100,7 +98,6 @@ alien_consumption_df = pd.DataFrame(
     ],
 )
 
-# Save the datasets
 alien_consumption_df.to_csv("data/alien_consumption.csv", index=False)
 mars_weather_df.to_csv("data/mars_weather.csv", index=False)
 galactic_events_df.to_csv("data/galactic_events.csv", index=False)
